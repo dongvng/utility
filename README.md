@@ -1,6 +1,6 @@
 ## Introduction
 
-utility library that makes your life esier
+utility library that makes your life easier
 
 ## Usage
 
