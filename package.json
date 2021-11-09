@@ -1,17 +1,19 @@
 {
   "name": "@dp66/dp-utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "utility fns",
   "main": "dist/index.js",
-  "module": "dist/dp-utils.esm.js",
+  "module": "esm/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "esm"
   ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
-    "build:tsc": "npm run prebuild && tsc -p tsconfig.json",
+    "prebuild:tsc": "rimraf dist",
+    "build:tsc": "tsc -p tsconfig.json",
     "test": "jest",
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -24,6 +26,7 @@
   "author": "Dong Nguyen",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.18.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-replace": "^3.0.0",
