@@ -1,6 +1,6 @@
 {
   "name": "@dp66/dp-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "utility fns",
   "main": "dist/index.js",
   "module": "dist/dp-utils.esm.js",
@@ -11,6 +11,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
+    "build:tsc": "npm run prebuild && tsc -p tsconfig.json",
     "test": "jest",
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*.ts\"",

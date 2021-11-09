@@ -1,3 +1,5 @@
+import { isDefined, isString } from "./type-guard";
+
 const commaPositionRegex = /\B(?=(\d{3})+(?!\d))/g;
 
 export function insertThousandSeparator(number: string | number): string {
@@ -12,13 +14,6 @@ export function insertThousandSeparator(number: string | number): string {
 export interface FormatMoneyOptions {
   decimalPlaces?: number;
 }
-
-export const isDefined = <T>(value: T | undefined): value is T =>
-  typeof value !== "undefined";
-
-export const isString = (value: unknown): value is String => {
-  return typeof value === "string";
-};
 
 export const formatMoney = (
   value: string | number | undefined,
