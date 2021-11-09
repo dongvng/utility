@@ -5,9 +5,10 @@ utility library that makes your life easier
 ## Usage
 
 ```
-import { formatMoney } from @dp66/dp-utils
+import { formatMoney } from "@dp66/dp-utils"
 
 const purse = formatMoney(1000);
+// purse will be 1,000.00
 ```
 
 ## Development
