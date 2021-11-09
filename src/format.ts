@@ -2,11 +2,11 @@ const commaPositionRegex = /\B(?=(\d{3})+(?!\d))/g;
 
 export function insertThousandSeparator(number: string | number): string {
   const numString = String(number);
-  if (numString.includes('.')) {
-    const [integer, decimal] = numString.split('.');
-    return `${integer.replace(commaPositionRegex, ',')}.${decimal}`;
+  if (numString.includes(".")) {
+    const [integer, decimal] = numString.split(".");
+    return `${integer.replace(commaPositionRegex, ",")}.${decimal}`;
   }
-  return numString.replace(commaPositionRegex, ',');
+  return numString.replace(commaPositionRegex, ",");
 }
 
 export interface FormatMoneyOptions {
@@ -14,18 +14,18 @@ export interface FormatMoneyOptions {
 }
 
 export const isDefined = <T>(value: T | undefined): value is T =>
-  typeof value !== 'undefined';
+  typeof value !== "undefined";
 
 export const isString = (value: unknown): value is String => {
-  return typeof value === 'string';
+  return typeof value === "string";
 };
 
 export const formatMoney = (
   value: string | number | undefined,
-  currencyOrOptions: string | FormatMoneyOptions = ''
+  currencyOrOptions: string | FormatMoneyOptions = ""
 ): string => {
   if (!isDefined(value)) {
-    return '';
+    return "";
   }
 
   const numValue = Number(value);

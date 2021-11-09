@@ -1,1 +1,1 @@
-export { formatMoney } from './format';
+export { formatMoney } from "./format";
