@@ -25,6 +25,12 @@ export default defineConfig([
         sourcemap: true,
         generatedCode: 'es2015',
       },
+      {
+        name: 'utils',
+        file: pkgJson.browser,
+        format: 'umd',
+        generatedCode: 'es2015',
+      },
     ],
     plugins: [
       autoExternal({

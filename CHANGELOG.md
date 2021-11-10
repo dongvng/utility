@@ -1,5 +1,11 @@
 # @dp66/dp-utils
 
+## 0.1.5
+
+### Patch Changes
+
+- add umd format
+
 ## 0.1.4
 
 ### Patch Changes

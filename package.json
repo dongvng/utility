@@ -1,16 +1,17 @@
 {
   "name": "@dp66/dp-utils",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "utility fns",
   "main": "dist/index.js",
   "module": "esm/index.esm.js",
+  "browser": "umd/index.umd.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
     "esm"
   ],
   "scripts": {
-    "prebuild": "rimraf dist esm",
+    "prebuild": "rimraf dist esm umd",
     "build": "rollup -c",
     "test": "jest",
     "prepublishOnly": "npm run build",
