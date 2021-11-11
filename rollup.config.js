@@ -7,8 +7,6 @@ import { defineConfig } from 'rollup';
 import autoExternal from 'rollup-plugin-auto-external';
 import pkgJson from './package.json';
 
-// todo: may have umd version
-
 export default defineConfig([
   {
     input: 'src/index.ts',

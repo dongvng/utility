@@ -1,5 +1,11 @@
 # @dp66/dp-utils
 
+## 0.1.6
+
+### Patch Changes
+
+- move multiple build module to single dist
+
 ## 0.1.5
 
 ### Patch Changes
