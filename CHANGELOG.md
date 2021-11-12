@@ -1,5 +1,11 @@
 # @dp66/dp-utils
 
+## 0.1.7
+
+### Patch Changes
+
+- minify build output
+
 ## 0.1.6
 
 ### Patch Changes
