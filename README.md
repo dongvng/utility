@@ -2,6 +2,18 @@
 
 utility library that makes your life easier
 
+## Installation
+
+```
+npm install @dp66/dp-utils
+```
+
+or
+
+```
+yarn add @dp66/dp-utils
+```
+
 ## Usage
 
 ```
@@ -46,3 +58,4 @@ npx changeset publish
 ```
 git push --tags
 ```
+
