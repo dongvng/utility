@@ -13,6 +13,9 @@ or
 ```
 yarn add @dp66/dp-utils
 ```
+## Features
+
+- Support cjs, esm, umd module format running both in browser and node
 
 ## Usage
 
@@ -23,11 +26,13 @@ const purse = formatMoney(1000);
 // purse will be 1,000.00
 ```
 
+## Built with
+
+- Typescript
+- Rollup
+
+
 ## Development
-
-Project use rollup to build and uploaded to npm registry
-
-Support both cjs and esm format running both in browser and node
 
 ### Flow of making changes
 
