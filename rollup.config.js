@@ -46,7 +46,11 @@ export default defineConfig([
         },
         preventAssignment: true,
       }),
-      terser(),
+      terser({
+        format: {
+          comments: 'all',
+        },
+      }),
     ],
   },
 ]);

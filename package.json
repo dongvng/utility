@@ -1,6 +1,6 @@
 {
   "name": "@dp66/dp-utils",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "utility fns",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
