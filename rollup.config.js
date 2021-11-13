@@ -42,7 +42,7 @@ export default defineConfig([
       }),
       replace({
         values: {
-          'process.env.NODE_ENV': JSON.stringify('production'),
+          'process.env.NODE_ENV': 'production',
         },
         preventAssignment: true,
       }),

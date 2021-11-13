@@ -1,14 +1,14 @@
-import { isDefined } from "./type-guard";
+import { isDefined } from './type-guard';
 
 const commaPositionRegex = /\B(?=(\d{3})+(?!\d))/g;
 
 export function insertThousandSeparator(number: string | number): string {
   const numString = String(number);
-  if (numString.includes(".")) {
-    const [integer, decimal] = numString.split(".");
-    return `${integer.replace(commaPositionRegex, ",")}.${decimal}`;
+  if (numString.includes('.')) {
+    const [integer, decimal] = numString.split('.');
+    return `${integer.replace(commaPositionRegex, ',')}.${decimal}`;
   }
-  return numString.replace(commaPositionRegex, ",");
+  return numString.replace(commaPositionRegex, ',');
 }
 
 export interface FormatMoneyOptions {
@@ -20,20 +20,20 @@ export interface FormatMoneyOptions {
  * default with 2 decimals
  *
  * @param value
- * @param currencyOrOptions
+ * @param options
  * @returns string
  */
 export const formatMoney = (
   value: string | number | undefined,
-  currencyOrOptions: FormatMoneyOptions = {}
+  options: FormatMoneyOptions = {}
 ) => {
   if (!isDefined(value)) {
-    return "";
+    return '';
   }
 
   const numValue = Number(value);
-  const decimalPlaces = isDefined(currencyOrOptions.decimalPlaces)
-    ? currencyOrOptions.decimalPlaces
+  const decimalPlaces = isDefined(options.decimalPlaces)
+    ? options.decimalPlaces
     : 2;
 
   if (isNaN(numValue)) {
