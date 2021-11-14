@@ -8,6 +8,6 @@ describe('formatMoney', () => {
 
   it('format number with many decimal places', () => {
     const res = formatMoney(46.23123123);
-    expect(res).toMatchInlineSnapshot(`"46.23"`);
+    expect(res).toMatchInlineSnapshot('"46.23"');
   });
 });
