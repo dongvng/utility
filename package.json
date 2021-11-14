@@ -20,6 +20,7 @@
     "changeset": "changeset",
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint --fix src/**/*.{ts,tsx}",
     "prepare": "husky install"
   },
   "keywords": [
@@ -34,7 +35,13 @@
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-replace": "^3.0.0",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@types/eslint": "^7.28.2",
     "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
     "husky": "^7.0.4",
     "jest": "^27.3.1",
     "lint-staged": "^11.2.6",
