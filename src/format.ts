@@ -2,6 +2,12 @@ import { isDefined } from './type-guard';
 
 const commaPositionRegex = /\B(?=(\d{3})+(?!\d))/g;
 
+/**
+ * seperate thousand with ',' sign
+ *
+ * @param number
+ * @returns string
+ */
 export function insertThousandSeparator(number: string | number): string {
   const numString = String(number);
   if (numString.includes('.')) {
