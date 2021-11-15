@@ -1,3 +1,5 @@
+[![CI](https://github.com/dongvng/utility/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/dongvng/utility/actions/workflows/ci.yml)
+
 ## Introduction
 
 utility library that makes your life easier
