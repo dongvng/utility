@@ -19,7 +19,7 @@
     "test": "jest",
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint --fix src/**/*.{ts,tsx}",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "prepare": "husky install"
   },
   "keywords": [
