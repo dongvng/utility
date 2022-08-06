@@ -1,5 +1,11 @@
 # @dp66/dp-utils
 
+## 0.3.0
+
+### Minor Changes
+
+- Add unit test
+
 ## 0.2.0
 
 ### Minor Changes
