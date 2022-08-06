@@ -1,6 +1,6 @@
 {
   "name": "@dp66/dp-utils",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "utility fns",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -17,6 +17,7 @@
     "prebuild": "rimraf dist",
     "build": "rollup -c",
     "test": "jest",
+    "changeset": "changeset",
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "husky install"
